@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="Asignment7.Taj.Master" %>
+
+<!DOCTYPE html>
+
+<<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML HomePage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../TajHotels/master.css">
+    <link rel="stylesheet" href="../TajHotels/ourteam.css">
+    <link rel="stylesheet" href="../TajHotels/contactus.css">
+
+
+
+     
+        
+        <nav aria-busy class="nav-items" style="font-family: Arial, Helvetica, sans-serif; font-size: large; color: #FFFF00; background-color: #C0C0C0;">
+            <a href="Home.aspx" style="color: #000000">Home</a>&nbsp;&nbsp;&nbsp;
+            <a href="Ourteam.aspx" style="color: #000000">Our Team</a>&nbsp;&nbsp;&nbsp;
+            <a href="Menu.aspx" style="color: #000000">Menu</a>&nbsp;&nbsp;
+            <a href="Gallery.aspx" style="color: #000000">Gallery</a>&nbsp;&nbsp;
+            <a href="Contact.aspx" style="color: #000000">Contact</a>
+        </nav>
+    
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+             <footer class="footer">
+        <div class="copy"></div>
+        <div class="bottom-links">
+            <div class="links">
+            </div>
+            <div class="links">
+                <br />
+                <span>Social Links</span>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+        </div>
+    </form>
+</body>
+
+</html>
